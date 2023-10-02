@@ -112,6 +112,12 @@ h6 {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: both;
+  transition: transform 0.3s ease;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+  transform: translateX(40px);
+  /* transform: scale(1.05); */
+  transition: transform 0.3s ease;
 }
 h1 strong,
 h2 strong,
@@ -126,6 +132,7 @@ li strong {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 0.5s;
+  transition: transform 0.3s ease;
 }
 strong {
   /* font-weight: bold; */
@@ -338,6 +345,18 @@ section h4, header {
   transform: translateY(-40px);
   animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+section > p {
+  transition: transform 0.3s ease;
+}
+section > p:hover {
+  transform: translateX(10px);
+  /* transform: scale(1.05); */
+  transition: transform 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: #6c9a77;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+}
 /* section pre > code { */
 /*   background: #ff4; */
 /* } */
@@ -496,7 +515,12 @@ li::marker {
 }
 li:hover {
   transform: translateX(-20px);
+  /* transform: scale(1.05); */
   transition: transform 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: #6c9a77;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
 }
 li[data-bespoke-marp-fragment="active"] {
   opacity: 1;
